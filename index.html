@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massoterapeuta Mari Gois</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu(this)">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon">✖</span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#inicio">Início</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#relaxante">Relaxante</a>
+            <a href="#drenagem">Drenagem Linfática</a>
+            <a href="#agendar">Agendar</a>
+            <a href="#social">Rede Sociais</a>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div class="header-content">
+            <img src="img/logo.png" alt="Logo Mari Gois" class="logo">
+            <div class="header-texto">
+                <h1>Massoterapeuta Mari Gois</h1>
+                <p>Equilíbrio, bem-estar e cuidado com você.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="img/imagem-principal.webp" alt="Massagem relaxante" class="hero-img">
+        <img src="img/foto-mae.jpeg" alt="Foto Mari" class="foto-mari">
+    </div>
+
+    <div class="section">
+        <h2 id="tipos">Tipos de Massagem</h2>
+        <div class="prices">
+            <img src="img/massagem-relaxante-beneficios.jpg" alt="Massagem Relaxante" class="massage-img">
+            <strong>Massagem Relaxante</strong><br>
+            Por região: R$50,00<br>
+            Corporal: R$80,00<br>
+            Domiciliar: R$90,00 <br>
+            Pacote com 4 sessões: R$325,00<br>
+            <br>
+            <img src="img/drenagem-linfatica.webp" alt="Drenagem Linfática" class="massage-img">
+            <strong>Drenagem Linfática</strong><br>
+            Corporal: R$80,00<br>
+            Domiciliar: R$90,00<br>
+            Pacote com 4 sessões: R$325,00<br>
+            <br>
+            <strong>Massagem também em Gestantes e Crianças</strong><br>
+            <br><br>
+            <em>Pagamento via Pix ou Dinheiro.</em>
+        </div>
+
+        <h2 id="relaxante">Benefícios da Massagem Relaxante</h2>
+        <div class="benefits">
+            <ul>
+                <li>Alivia dores musculares e cãibras</li>
+                <li>Diminui o estresse e a ansiedade</li>
+                <li>Melhora a circulação sanguínea</li>
+                <li>Aumenta a elasticidade da pele</li>
+                <li>Fortalece o sistema imunológico</li>
+                <li>Melhora o sono</li>
+                <li>Aumenta o foco e a concentração</li>
+                <li>Estimula a drenagem linfática</li>
+                <li>Ajuda a eliminar toxinas e resíduos metabólicos</li>
+                <li>Serve como terapia e auxilia em tratamentos</li>
+            </ul>
+        </div>
+
+        <h2 id="drenagem">Benefícios da Drenagem Linfática</h2>
+        <div class="benefits">
+            <ul>
+                <li>Favorece a eliminação de toxinas e metabólitos</li>
+                <li>Diminui o inchaço, edemas e celulite</li>
+                <li>Remove células mortas, deixando a pele mais macia e hidratada</li>
+            </ul>
+        </div>
+
+        <a href="#agendar" class="whatsapp-button" id="agendar" onclick="abrirFormulario()">Agendar</a>
+    </div>
+
+    <!-- Modal do agendamento -->
+    <div id="formulario-modal">
+        <div class="modal-content">
+            <div id="perguntas-container"></div>
+
+            <div class="botoes-container">
+                <button id="btn-voltar" onclick="voltarPergunta()">Voltar</button>
+                <button id="btn-proximo" onclick="proximaPergunta()">Próximo</button>
+                <button onclick="fecharFormulario()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social" id="social">
+            <p>Siga a Mari nas redes sociais:</p>
+            <a href="https://www.instagram.com/marigois_massoterapeuta" target="_blank"><i
+                    class="bi bi-instagram"></i>Instagram</a> |
+            <a href="https://www.facebook.com/marielemessias" target="_blank"><i class="bi bi-facebook"></i>Facebook</a>
+        </div>
+        © 2025 Massoterapeuta Mari Gois. Todos os direitos reservados. <br>
+        Desenvolvido por -> Guilherme Gois.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
